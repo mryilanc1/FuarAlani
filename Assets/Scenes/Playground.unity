@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 2114283754330233425}
-  m_IndirectSpecularColor: {r: 0.029152056, g: 0.06444542, b: 0.12695055, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999905, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2157,6 +2157,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stand_1
       objectReference: {fileID: 0}
+    - target: {fileID: 2423971380673066574, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381208039857, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381678526368, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381678526368, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381678526368, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2423971381673546815, guid: 3e34e918a874fd34e848ac29df6df9de, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3e34e918a874fd34e848ac29df6df9de, type: 3}
@@ -2783,6 +2808,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544158382}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &574701034 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2423971381208039857, guid: 3e34e918a874fd34e848ac29df6df9de,
+    type: 3}
+  m_PrefabInstance: {fileID: 484044086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &601592772
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,6 +3183,27 @@ RectTransform:
   m_AnchoredPosition: {x: -1.3900013, y: 0.12000084}
   m_SizeDelta: {x: 10.2567, y: 23.468}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &709996094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2423971380178930068, guid: 3e34e918a874fd34e848ac29df6df9de,
+    type: 3}
+  m_PrefabInstance: {fileID: 484044086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &709996099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709996094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd62b1d3a932484a9e6119281218095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentText: {fileID: 1474187833}
+  scrollSpeed: 0.2
+  isScrolling: 0
 --- !u!1 &723565068
 GameObject:
   m_ObjectHideFlags: 0
@@ -5261,9 +5313,21 @@ MonoBehaviour:
   raycastEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1019038038}
-        m_TargetAssemblyTypeName: StarterAssets.CustomButton, Assembly-CSharp
-        m_MethodName: OnMouseDown
+      - m_Target: {fileID: 574701034}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 709996099}
+        m_TargetAssemblyTypeName: ScrollViewController, Assembly-CSharp
+        m_MethodName: StartScrolling
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5271,7 +5335,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   raycastExitEvent:
     m_PersistentCalls:
@@ -6297,7 +6361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42fd97e294c347cbb7716da1ee0c6c78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  raycastActive: 1
 --- !u!114 &1182907169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7644,6 +7707,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1474187833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2423971380690368133, guid: 3e34e918a874fd34e848ac29df6df9de,
+    type: 3}
+  m_PrefabInstance: {fileID: 484044086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1550137567
 GameObject:
   m_ObjectHideFlags: 0
