@@ -160,17 +160,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2423971379846738260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2423971380088980881}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.07, y: 0.37}
+  m_SizeDelta: {x: 4, y: 4}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &2423971379846738265
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a90bbcaf0a0acd94fa82e61123e0da48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1db17f9e3007ea84f9193f1684f839e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -243,7 +243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000009536743, y: 0}
+  m_AnchoredPosition: {x: 0.0000009536743, y: 20.855606}
   m_SizeDelta: {x: 0, y: 35}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2423971379941690428
@@ -287,8 +287,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2423971380049873538}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.0699997, y: 3, z: 1}
-  m_LocalScale: {x: 12.019925, y: 6.5412426, z: 12.019925}
+  m_LocalPosition: {x: 3.07, y: -1.97, z: -0.45}
+  m_LocalScale: {x: 12.019925, y: 12.01993, z: 1}
   m_Children:
   - {fileID: 2423971381154909740}
   m_Father: {fileID: 2423971380597979578}
@@ -321,7 +321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 28810505c269a1b4a896081781131d3e, type: 2}
+  - {fileID: 2100000, guid: 1e6c69077235a1845b67013be5be305d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -735,7 +735,6 @@ GameObject:
   - component: {fileID: 2423971380354254391}
   - component: {fileID: 2423971380354254388}
   - component: {fileID: 2423971380354254389}
-  - component: {fileID: 2423971380354254390}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -806,20 +805,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2423971380354254390
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423971380354254384}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2423971380440217509
 GameObject:
   m_ObjectHideFlags: 0
@@ -967,7 +952,6 @@ GameObject:
   - component: {fileID: 2423971380548413035}
   - component: {fileID: 2423971380548413032}
   - component: {fileID: 2423971380548413033}
-  - component: {fileID: 2423971380548413034}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1038,20 +1022,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2423971380548413034
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423971380548413028}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &2423971380597979579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,33 +1247,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bilgiyi, g\xFCce ve g\xFCvene d\xF6n\xFC\u015Ft\xFCren kurulu\u015F\r\n\r\nT\xFCrk
-    Silahl\u0131 Kuvvetleri\u2019nin haberle\u015Fme ihtiya\xE7lar\u0131n\u0131n
-    milli imkanlarla kar\u015F\u0131lanmas\u0131 i\xE7in 1975 y\u0131l\u0131nda kurulan
-    ASELSAN; T\xFCrk Silahl\u0131 Kuvvetlerini G\xFC\xE7lendirme Vakf\u0131\u2019na
-    (TSKGV) ba\u011Fl\u0131 bir anonim \u015Firkettir. ASELSAN hisselerinin %74,20\u2019si
-    TSKGV\u2019ye aittir, %25,80\u2019lik k\u0131s\u0131m ise Borsa \u0130stanbul\u2019da
-    (B\u0130ST) i\u015Flem g\xF6rmektedir.\r\n\r\nT\xFCrkiye\u2019nin en b\xFCy\xFCk
-    savunma elektroni\u011Fi kurulu\u015Fu olan ASELSAN; ba\u015Fta T\xFCrk Silahl\u0131
-    Kuvvetleri olmak \xFCzere yurt i\xE7i ve yurt d\u0131\u015F\u0131 ihtiya\xE7
-    makamlar\u0131n\u0131n, haberle\u015Fme ve bilgi teknolojileri, radar ve elektronik
-    harp, elektro-optik, aviyonik, insans\u0131z sistemler, kara, deniz ve silah
-    sistemleri, hava savunma ve f\xFCze sistemleri, komuta kontrol sistemleri, ula\u015Ft\u0131rma,
-    g\xFCvenlik, trafik, otomasyon ve sa\u011Fl\u0131k teknolojilerine y\xF6nelik
-    ihtiya\xE7lar\u0131n\u0131 kar\u015F\u0131layabilecek \xE7ok geni\u015F bir \xFCr\xFCn
-    yelpazesine sahiptir. ASELSAN bug\xFCn \xF6zg\xFCn \xFCr\xFCnlerini ihra\xE7
-    eden, d\xFCnyan\u0131n ilk 100 savunma sanayi \u015Firketi (Defense News Top
-    100) listesinde yer alan, yerel kurulu\u015Flar ile i\u015Fbirli\u011Fi modelleri
-    kurgulayarak uluslararas\u0131 pazarlarda ortakl\u0131klar kuran, yat\u0131r\u0131m
-    yapan bir marka haline gelmi\u015Ftir.\r\n\r\nASELSAN, vizyonundaki teknoloji
-    vurgusu ile \u201CK\xFCresel pazarda yaratt\u0131\u011F\u0131 de\u011Ferler ile
-    s\xFCrd\xFCr\xFClebilir b\xFCy\xFCmesini koruyan, rekabet g\xFCc\xFC ile tercih
-    edilen, stratejik bir ortak gibi g\xFCven duyulan, \xE7evreye ve insana duyarl\u0131
-    bir milli teknoloji firmas\u0131 olmak\u201D hedefini benimsemi\u015Ftir.\r\n\r\nBu
-    ba\u015Far\u0131n\u0131n kilit fakt\xF6rlerinden olan 9.000\u2019i a\u015Fk\u0131n
-    \xE7al\u0131\u015Fan\u0131 ve nitelikli m\xFChendislik kadrosu ile ASELSAN, y\u0131ll\u0131k
-    cirosunun ortalama %7\u2019sini, kendi \xF6zkaynaklar\u0131 ile finanse edilen
-    Ar-Ge faaliyetlerine ay\u0131rmaktad\u0131r."
+  m_text: "HAVELSAN, T\xFCrk Silahl\u0131 Kuvvetlerini G\xFC\xE7lendirme Vakf\u0131\u2019n\u0131n
+    bir \u015Firketi olarak 1982 y\u0131l\u0131nda kuruldu. \r\n\r\nT\xFCrkiye\u2019nin
+    en b\xFCy\xFCk teknoloji firmalar\u0131ndan biri kabul edilen HAVELSAN; deneyimi,
+    uzman \xE7al\u0131\u015Fanlar\u0131, ileri teknolojiye dayal\u0131 yaz\u0131l\u0131m
+    yo\u011Funluklu \xF6zg\xFCn \xE7\xF6z\xFCm ve \xFCr\xFCnleriyle sistem entegrat\xF6r\xFC
+    uluslararas\u0131 lider bir firmad\u0131r. \r\nB\xFCnyesinde geli\u015Ftirilen
+    y\xFCksek teknoloji ve yaz\u0131l\u0131mlar\u0131n yan\u0131 s\u0131ra HAVELSAN;
+    savunma, g\xFCvenlik ve bili\u015Fim sekt\xF6rlerinde teknoloji \xFCreten ve
+    i\u015F ekosisteminde yer alan firmalar\u0131n \xE7\xF6z\xFCm ve \xFCr\xFCnlerini
+    de bir araya getirerek m\xFC\u015Fterilerine anahtar teslim \xE7\xF6z\xFCmler
+    sa\u011Flamaktad\u0131r.\r\n\r\nYaz\u0131l\u0131m yo\u011Fun sistemler konusunda
+    faaliyet g\xF6steren HAVELSAN;\r\n-    Sim\xFClasyon, Otonom ve Platform Y\xF6netim
+    Teknolojileri\r\n-    Komuta Kontrol ve Savunma Teknolojileri\r\n-    Bilgi ve
+    \u0130leti\u015Fim Teknolojileri\r\n-    \xDClke ve Siber G\xFCvenlik \xC7\xF6z\xFCmleri
+    \r\n\r\nalanlar\u0131nda \xF6zg\xFCn \xFCr\xFCn ve sistemlerden olu\u015Fan \xE7\xF6z\xFCmlerini
+    T\xFCrk Silahl\u0131 Kuvvetleri\u2019nin (TSK), kamu kurum ve kurulu\u015Flar\u0131n\u0131n,
+    \xF6zel sekt\xF6r\xFCn ve uluslararas\u0131 m\xFC\u015Fterilerinin hizmetine
+    sunmaktad\u0131r."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -1700,7 +1661,6 @@ GameObject:
   - component: {fileID: 2423971381159474847}
   - component: {fileID: 2423971381159474844}
   - component: {fileID: 2423971381159474845}
-  - component: {fileID: 2423971381159474846}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -1771,20 +1731,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2423971381159474846
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423971381159474840}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2423971381208039857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,7 +1749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2423971381208039856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1938,7 +1884,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2423971381390256454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2031,7 +1977,6 @@ GameObject:
   - component: {fileID: 2423971381659822474}
   - component: {fileID: 2423971381659822479}
   - component: {fileID: 2423971381659822472}
-  - component: {fileID: 2423971381659822473}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -2102,19 +2047,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2423971381659822473
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423971381659822475}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2423971381670254968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,7 +2058,6 @@ GameObject:
   - component: {fileID: 2423971381670254972}
   - component: {fileID: 2423971381670254973}
   - component: {fileID: 2423971381670254974}
-  - component: {fileID: 2423971381670254975}
   m_Layer: 0
   m_Name: tank
   m_TagString: Untagged
@@ -2142,7 +2073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2423971381670254968}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06606588, y: 0.76621366, z: 0.029612143}
+  m_LocalPosition: {x: -0.06606588, y: 0.699, z: 0.029612143}
   m_LocalScale: {x: 0.35989115, y: 0.23549996, z: 0.2355}
   m_Children:
   - {fileID: 2423971380354254391}
@@ -2201,19 +2132,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2423971381670254975
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423971381670254968}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2423971381673546809
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,7 +2201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3042b019b052942a1baf7aa49d7ca6bb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b74c31d447d2f5d41a61081bdf5e7126, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2406,7 +2324,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.4041257}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
