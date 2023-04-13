@@ -2,8 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScrollViewController : MonoBehaviour {
-
+public class ScrollViewController : MonoBehaviour
+{
     public TextMeshProUGUI contentText; // ScrollView içindeki uzun metin
     public float scrollSpeed; // Kaydırma hızı
 
@@ -13,7 +13,8 @@ public class ScrollViewController : MonoBehaviour {
     private float contentHeight; // ScrollView içeriğinin toplam yüksekliği
     private float scrollViewHeight; // ScrollView bileşeninin yüksekliği
 
-    void Start() {
+    void Start()
+    {
         // ScrollView bileşenini al
         scrollView = GetComponent<ScrollRect>();
 
@@ -25,17 +26,19 @@ public class ScrollViewController : MonoBehaviour {
         scrollPosition = 0f;
 
         // ScrollView'in kaydırılmadığını başlangıçta belirt
-       
     }
 
-    void Update() {
+    void Update()
+    {
         // Eğer ScrollView kaydırılıyorsa
-        if (isScrolling) {
+        if (isScrolling)
+        {
             // ScrollView'in şu anki konumunu güncelle
             scrollPosition += scrollSpeed * Time.deltaTime;
 
             // ScrollView'in konumunu sınırla
-            if (scrollPosition > contentHeight - scrollViewHeight) {
+            if (scrollPosition > contentHeight - scrollViewHeight)
+            {
                 scrollPosition = contentHeight - scrollViewHeight;
             }
 
@@ -44,12 +47,14 @@ public class ScrollViewController : MonoBehaviour {
         }
     }
 
-    public void StartScrolling() {
+    public void StartScrolling()
+    {
         // ScrollView kaydırmayı başlat
         isScrolling = true;
     }
 
-    public void StopScrolling() {
+    public void StopScrolling()
+    {
         // ScrollView kaydırmayı durdur
         isScrolling = false;
     }
