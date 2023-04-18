@@ -148,6 +148,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2423971380597979578, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
       propertyPath: m_RootOrder
@@ -207,6 +212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stand_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381208039856, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2423971381208039857, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
@@ -1316,6 +1326,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1351528435}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &917424201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917424200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1032e325656104b4f8179a7a0ea72f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &917424206
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1437,6 +1459,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 432d27f28c1251041bd6d1753602d5f0, type: 2}
+    - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1620,6 +1647,11 @@ PrefabInstance:
         d\xFCnya \xE7ap\u0131nda en ileri teknolojik sistemleri geli\u015Ftirmeye
         devam etmektedir. "
       objectReference: {fileID: 0}
+    - target: {fileID: 2423971381208039856, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2423971381208039857, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
       propertyPath: m_IsActive
@@ -1650,6 +1682,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PreserveAspect
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265904409702578587, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265904409702578587, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265904409702578587, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.99
       objectReference: {fileID: 0}
     - target: {fileID: 5680487361268377947, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
@@ -1772,6 +1819,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 432d27f28c1251041bd6d1753602d5f0, type: 2}
     - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
       propertyPath: m_LocalScale.y
       value: 12.01993
       objectReference: {fileID: 0}
@@ -1887,6 +1939,11 @@ PrefabInstance:
         burs ve \xF6d\xFCller ile desteklenmekte, \xF6zendirilmekte, \xFCniversitelerimizin,
         kamu kurumlar\u0131m\u0131z\u0131n ve sanayimizin projeleri fonlanarak, \xFClkemizin
         rekabet g\xFCc\xFCn\xFCn art\u0131r\u0131lmas\u0131 hedeflenmektedir.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381208039856, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2423971381208039857, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
@@ -2624,6 +2681,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 432d27f28c1251041bd6d1753602d5f0, type: 2}
     - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971380049873542, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.9
       objectReference: {fileID: 0}
@@ -2686,6 +2748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Stand_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2423971381208039856, guid: 3e34e918a874fd34e848ac29df6df9de,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2423971381208039857, guid: 3e34e918a874fd34e848ac29df6df9de,
         type: 3}
