@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using UnityStandardAssets.Characters.FirstPerson;
 
 #pragma warning disable 618, 649
 namespace UnityStandardAssets.Characters.FirstPerson
@@ -42,6 +43,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+        
 
         // Use this for initialization
         private void Start()
@@ -178,6 +180,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
 
+        private void OnTriggerEnter(Collider other)
+        {
+
+            foreach (var obj in other.GetComponent<StandManager>().canvas_description)
+            {
+                obj.SetActive(true);
+            }
+                
+
+
+        }
+        
+        private void OnTriggerExit(Collider other)
+        {
+            
+            foreach (var obj in other.GetComponent<StandManager>().canvas_description)
+            {
+                obj.SetActive(false);
+            }
+        
+        }
+        
+        
         private void UpdateCameraPosition(float speed)
         {
             Vector3 newCameraPosition;
